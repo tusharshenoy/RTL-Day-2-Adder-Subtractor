@@ -1,9 +1,9 @@
 module full_subtractor_tb();
 
 reg a,b,cin;
-wire s,co;
+wire d,bo;
 
-full_subtractor dut(.a(a),.b(b),.cin(cin),.s(s),.co(co));
+full_subtractor dut(.a(a),.b(b),.cin(cin),.d(d),.bo(bo));
 
 initial begin
 //stimulus
