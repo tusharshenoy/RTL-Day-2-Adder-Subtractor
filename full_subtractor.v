@@ -1,15 +1,15 @@
-module full_subtractor(a,b,cin,s,co);
+module full_subtractor(a,b,cin,d,bo);
 input a,b,cin;
-output s,co;
+output d,bo;
 
 //Gate Level Implementation
-xor(s,a,b,cin);
+xor(d,a,b,cin);
 
 wire w1,w2,w3;
 and(w1,~a,b); 
 and(w2,~b,cin);
 and(w3,b,cin);
 
-or(co,w1,w2,w3);
+or(bo,w1,w2,w3);
 
 endmodule
